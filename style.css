@@ -1,3 +1,11 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Norse';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/Norse-Bold.otf') format('opentype');
+}
+
 .banner {
   background-color: #202f06;
   background-image: url('/assets/halie-west-25xggax4bSA-unsplash.jpg');
@@ -6,13 +14,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-inline: 0;
 
   & a {
     color: inherit;
   }
 
-  > :first-child {
+  > .logo {
     margin-block: 10vmax;
+    font-family: Norse, sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: hsl(0 0% 0% / 50%);
+    align-self: stretch;
+    padding-block: 1rem;
   }
 }
 
